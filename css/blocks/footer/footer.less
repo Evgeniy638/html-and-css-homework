@@ -1,7 +1,7 @@
 .footer {
-    background: #212122;
+    background: @color-dark;
     padding: 30px 0 22px;
-    color: #999; 
+    color: @footer-text-color; 
     
     &__logo {
         display: none;
@@ -10,33 +10,6 @@
             display: flex;
             justify-content: flex-end;
         }
-    }
-
-    &__social-icons-wrapper {
-        display: flex;
-        margin-bottom: 30px;
-    }
-
-    &__social-icon {
-        margin-right: 15px;
-        cursor: pointer;
-    }
-
-    &__app-icons-wrapper {
-        margin-bottom: 30px;
-        display: flex;
-
-        @media @screen-gt-s {
-            justify-content: flex-end;
-        }
-
-        @media @screen-gt-m {
-            justify-content: flex-start;
-        }
-    }
-
-    &__app-icon:not(:last-child) {
-        margin-right: 8px;
     }
 
     &__line {
