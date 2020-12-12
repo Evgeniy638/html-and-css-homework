@@ -540,9 +540,6 @@ body {
   height: 1px;
   margin-bottom: 15px;
 }
-.footer__text {
-  margin: 0;
-}
 .app-icons {
   margin-bottom: 30px;
   display: flex;
