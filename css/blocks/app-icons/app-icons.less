@@ -1,0 +1,31 @@
+.app-icons {
+    margin-bottom: 30px;
+    display: flex;
+
+    @media @screen-gt-s {
+        justify-content: flex-end;
+    }
+
+    @media @screen-gt-m {
+        justify-content: flex-start;
+    }
+
+    &__icon {
+        color: @footer-text-color;
+        background: no-repeat 50% 50%;
+        text-indent: -9999px;
+        width: 140px;
+        height: 40px;
+        display: block;
+        margin: 0 4px;
+
+        @icons: app-store, google-play;
+
+        each(@icons, {
+            &_@{value} {
+                background-image: url('@{value}.svg');
+            }
+        })
+    }
+}
+
